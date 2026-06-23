@@ -23,11 +23,12 @@ const canonical = "https://carlosgalvaoadv.com.br";
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Carlos Galvão | Advogado Criminalista em BH e Barbacena/MG" />
-    <meta property="og:description" content="Defesa criminal com experiência real. +1.700 processos. Atendimento 24h. Atuação em todo o Brasil." />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content="pt_BR" />
+    <meta property="og:image" content={`${canonical}/foto.jpeg`} />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />

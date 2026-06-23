@@ -2,93 +2,80 @@
 const faq = [
   {
     q: "Vocês atendem fora de Belo Horizonte?",
-    a: "Sim. Com escritório também em Barbacena/MG e atendimento remoto para qualquer estado do Brasil."
+    a: "Sim. Com escritório também em Barbacena/MG e atendimento remoto para qualquer estado do Brasil.",
   },
   {
     q: "Vocês assumem casos em andamento?",
-    a: "Sim. É possível assumir a defesa em qualquer fase — inquérito, ação penal, recurso ou execução."
+    a: "Sim. É possível assumir a defesa em qualquer fase — inquérito, ação penal, recurso ou execução.",
   },
   {
     q: "O que fazer em caso de prisão em flagrante?",
-    a: "Ligue imediatamente para (31) 99746-8554. O plantão funciona 24 horas, todos os dias."
+    a: "Ligue imediatamente para (31) 99746-8554. O plantão funciona 24 horas, todos os dias.",
   },
   {
     q: "Como funciona o primeiro atendimento?",
-    a: "Entre em contato pelo WhatsApp com um breve relato. O caso passa por triagem e você já recebe as primeiras orientações."
+    a: "Entre em contato pelo WhatsApp com um breve relato. O caso passa por triagem e você já recebe as primeiras orientações.",
   },
   {
     q: "É importante ter advogado no interrogatório?",
-    a: "Sim. Nenhuma declaração deve ser feita sem defesa presente. A orientação prévia pode ser determinante no resultado do processo."
+    a: "Sim. Nenhuma declaração deve ser feita sem defesa presente. A orientação prévia pode ser determinante no resultado do processo.",
   },
   {
     q: "Como serei informado sobre meu processo?",
-    a: "Após a contratação, você recebe atualizações diretas em cada movimentação relevante, sem precisar ficar ligando para saber o que está acontecendo."
-  }
+    a: "Após a contratação, você recebe atualizações diretas em cada movimentação relevante, sem precisar ficar ligando para saber o que está acontecendo.",
+  },
 ];
 ---
 
 <style>
-  details {
-    /* Smooth accordion animation via grid */
-  }
-  
-  details > summary {
-    list-style: none;
-  }
-  
-  details > summary::-webkit-details-marker {
-    display: none;
-  }
-  
-  .faq-content {
+  .faq-item .faq-content {
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.3s ease-out;
   }
-  
-  details[open] .faq-content {
+
+  .faq-item.active .faq-content {
     grid-template-rows: 1fr;
   }
-  
-  .faq-content > div {
+
+  .faq-item .faq-content > div {
     overflow: hidden;
   }
-  
+
   /* Plus/Minus icon animation */
-  details > summary .icon::before,
-  details > summary .icon::after {
-    content: '';
+  .faq-btn .icon::before,
+  .faq-btn .icon::after {
+    content: "";
     position: absolute;
     background-color: var(--gold);
     transition: transform 0.3s ease;
   }
-  
-  details > summary .icon::before {
+
+  .faq-btn .icon::before {
     width: 2px;
     height: 14px;
     top: 5px;
     left: 11px;
   }
-  
-  details > summary .icon::after {
+
+  .faq-btn .icon::after {
     width: 14px;
     height: 2px;
     top: 11px;
     left: 5px;
   }
-  
-  details[open] > summary .icon::before {
+
+  .faq-item.active .faq-btn .icon::before {
     transform: rotate(90deg);
   }
-  
-  details[open] > summary .icon::after {
+
+  .faq-item.active .faq-btn .icon::after {
     transform: rotate(180deg);
   }
 </style>
 
 <section id="faq" class="py-24 bg-bg-card relative">
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-    
     <div class="text-center mb-16 fade-up">
       <h2 class="font-playfair text-4xl sm:text-5xl font-bold text-white mb-4">
         Dúvidas <span class="text-gold italic">Frequentes</span>
@@ -97,20 +84,32 @@ const faq = [
     </div>
 
     <div class="space-y-4">
-      {faq.map((item, index) => (
-        <details class={`fade-up delay-${(index % 5) + 1} bg-bg border border-white/10 rounded-lg group`}>
-          <summary class="cursor-pointer font-medium text-lg text-white p-6 pr-12 relative flex items-center hover:text-gold transition-colors">
-            {item.q}
-            <div class="absolute right-6 top-1/2 -translate-y-1/2 w-6 h-6 icon"></div>
-          </summary>
-          <div class="faq-content">
-            <div class="px-6 pb-6 text-gray-400 leading-relaxed border-t border-white/5 pt-4 mt-2 mx-6">
-              {item.a}
+      {
+        faq.map((item, index) => (
+          <div
+            class={`faq-item fade-up delay-${(index % 5) + 1} bg-bg border border-white/10 rounded-lg group overflow-hidden`}
+          >
+            <button class="faq-btn w-full text-left cursor-pointer font-medium text-lg text-white p-6 pr-12 relative flex items-center hover:text-gold transition-colors">
+              {item.q}
+              <div class="absolute right-6 top-1/2 -translate-y-1/2 w-6 h-6 icon" />
+            </button>
+            <div class="faq-content">
+              <div class="px-6 pb-6 text-gray-400 leading-relaxed border-t border-white/5 pt-4 mt-2 mx-6">
+                {item.a}
+              </div>
             </div>
           </div>
-        </details>
-      ))}
+        ))
+      }
     </div>
-
   </div>
 </section>
+
+<script>
+  document.querySelectorAll(".faq-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const item = btn.closest(".faq-item");
+      item?.classList.toggle("active");
+    });
+  });
+</script>
