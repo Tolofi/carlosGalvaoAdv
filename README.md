@@ -1,43 +1,42 @@
-# Astro Starter Kit: Minimal
+# Carlos Galvão - Advocacia Criminal
 
-```sh
-npm create astro@latest -- --template minimal
+Website oficial do escritório do Dr. Carlos Galvão Neto, advogado criminalista com atuação em Minas Gerais e em todo o Brasil.
+
+## 🚀 Tecnologias Utilizadas
+
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
+
+- **[Astro](https://astro.build/)** - Framework web rápido para conteúdo
+- **[Tailwind CSS](https://tailwindcss.com/)** - Estilização utilitária
+- **[TypeScript](https://www.typescriptlang.org/)** - Tipagem estática
+
+## 🛠️ Como executar localmente
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/Tolofi/carlosGalvao-adv.git
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+2. Instale as dependências:
+```bash
+npm install
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+3. Inicie o servidor de desenvolvimento:
+```bash
+npm run dev
+```
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+4. Acesse o projeto no seu navegador: `http://localhost:4321`
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 🏗️ Como fazer o build para produção
 
-## 🧞 Commands
+```bash
+npm run build
+```
 
-All commands are run from the root of the project, from a terminal:
+O código pronto para produção será gerado na pasta `dist/`.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 📄 Licença
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Este projeto é de uso exclusivo do cliente. Todos os direitos reservados.
