@@ -1,0 +1,79 @@
+---
+const servicos = [
+  {
+    title: "Tráfico de Drogas",
+    desc: "Defesa desde a prisão em flagrante até os Tribunais Superiores, com análise técnica das provas e identificação de nulidades.",
+    icon: `<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>`
+  },
+  {
+    title: "Tribunal do Júri",
+    desc: "Estratégia completa para crimes dolosos contra a vida, com preparo técnico e construção de narrativa persuasiva para os jurados.",
+    icon: `<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg>`
+  },
+  {
+    title: "Crimes Econômicos",
+    desc: "Atuação em lavagem de dinheiro, crimes tributários e fraudes, com análise pericial e defesa robusta em todas as instâncias.",
+    icon: `<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>`
+  },
+  {
+    title: "Direito Penal Militar",
+    desc: "Defesa em processos na Justiça Militar Estadual e Federal, com conhecimento específico da legislação castrense.",
+    icon: `<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>`
+  },
+  {
+    title: "Habeas Corpus",
+    desc: "Identificação de ilegalidades, excesso de prazo e constrangimento ilegal para garantir a liberdade do cliente com urgência.",
+    icon: `<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z" /></svg>`
+  },
+  {
+    title: "Execução Penal",
+    desc: "Progressão de regime, livramento condicional, remição de pena e todos os direitos do preso calculados e ingressados no momento certo.",
+    icon: `<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" /></svg>`
+  },
+  {
+    title: "Crimes Contra o Patrimônio",
+    desc: "Defesa em casos de roubo, furto, estelionato e receptação em qualquer fase do processo.",
+    icon: `<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>`
+  },
+  {
+    title: "Todas as Áreas do Direito Penal",
+    desc: "Atuação completa em qualquer infração penal, do inquérito policial ao recurso nos Tribunais Superiores.",
+    icon: `<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>`
+  }
+];
+---
+
+<section id="servicos" class="py-24 bg-bg-card relative">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="text-center mb-16 fade-up">
+      <h2 class="font-playfair text-4xl sm:text-5xl font-bold text-white mb-4">
+        Áreas de <span class="text-gold italic">Atuação</span>
+      </h2>
+      <div class="w-24 h-1 bg-gold mx-auto opacity-50 rounded"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+      {servicos.map((servico, index) => (
+        <div class={`fade-up delay-${(index % 3) + 1} group bg-bg border border-white/5 rounded-lg p-8 relative overflow-hidden transition-all duration-300 hover:bg-gold/5 border-l-4 border-l-gold hover:shadow-[0_0_20px_rgba(201,168,76,0.15)] hover:border-white/10`}>
+          
+          <!-- Subtle glow on hover -->
+          <div class="absolute inset-0 bg-gradient-to-r from-gold/0 via-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+          
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 text-gold flex-shrink-0 group-hover:scale-110 transition-transform duration-300" set:html={servico.icon} />
+            
+            <div>
+              <h3 class="text-xl font-bold text-white mb-3 font-playfair tracking-wide group-hover:text-gold transition-colors">{servico.title}</h3>
+              <p class="text-gray-400 leading-relaxed text-sm sm:text-base">
+                {servico.desc}
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>

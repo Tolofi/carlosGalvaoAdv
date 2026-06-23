@@ -1,0 +1,120 @@
+---
+const whatsappLink = "https://wa.me/5531997468554?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20falar%20com%20o%20Dr.%20Carlos%20Galvão.";
+---
+
+<section id="hero" class="relative min-h-[90vh] flex flex-col pt-20 overflow-hidden">
+
+  <!-- Subtle gradient overlay -->
+  <div class="absolute inset-0 bg-gradient-to-b from-bg/40 to-bg z-0"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-16 flex-grow flex items-center">
+    <div class="max-w-3xl w-full">
+      <!-- Badge -->
+      <div class="fade-up inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-gold/30 bg-gold/5 text-gold text-sm font-medium mb-8">
+        <span class="animate-pulse">⚖️</span>
+        <span>Quase 20 anos defendendo a liberdade de quem mais precisou</span>
+      </div>
+      
+      <!-- Headline -->
+      <h1 class="fade-up delay-1 font-playfair text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
+        Advocacia criminal com <span class="text-gold">experiência real</span>, estratégia e presença em todas as fases do processo.
+      </h1>
+      
+      <!-- Subtitle -->
+      <p class="fade-up delay-2 text-lg sm:text-xl text-gray-300 leading-relaxed mb-10 max-w-2xl">
+        Desde 2006, o Dr. Carlos Galvão Neto atua na defesa criminal em Minas Gerais e em todo o Brasil — do flagrante ao Tribunal do Júri, do habeas corpus à execução penal. Quando está em jogo a sua liberdade, experiência faz toda a diferença.
+      </p>
+      
+      <!-- CTAs -->
+      <div class="fade-up delay-3 flex flex-col sm:flex-row gap-4 items-center">
+        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-gold hover:bg-gold-light text-bg font-bold py-4 px-8 rounded flex items-center justify-center gap-2 transition-all duration-300 shadow-[0_0_20px_rgba(201,168,76,0.2)] hover:shadow-[0_0_30px_rgba(201,168,76,0.5)] transform hover:-translate-y-1">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          Falar com o Dr. Carlos Galvão &rarr; WhatsApp
+        </a>
+        <a href="#sobre" class="text-white hover:text-gold transition-colors font-medium py-4 px-6 flex items-center gap-2">
+          Conheça o escritório <span>&darr;</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-full relative z-10 mt-auto">
+    <!-- Animated Ticker -->
+    <div class="w-full overflow-hidden border-y border-gold/10 py-3 select-none pointer-events-none">
+      <div class="animate-ticker flex items-center text-sm font-medium text-gold/80 tracking-wider whitespace-nowrap">
+        <!-- Repeated items for infinite effect -->
+        <span class="mx-8">ATENDIMENTO 24H PARA URGÊNCIAS &rarr;</span>
+        <span class="mx-8">PLANTÃO PARA PRISÃO EM FLAGRANTE &rarr;</span>
+        <span class="mx-8">ATUAÇÃO EM TODO O BRASIL &rarr;</span>
+        <span class="mx-8">QUASE 20 ANOS DE EXPERIÊNCIA &rarr;</span>
+        <span class="mx-8">MATRIZ EM BH · FILIAL EM BARBACENA &rarr;</span>
+        
+        <span class="mx-8">ATENDIMENTO 24H PARA URGÊNCIAS &rarr;</span>
+        <span class="mx-8">PLANTÃO PARA PRISÃO EM FLAGRANTE &rarr;</span>
+        <span class="mx-8">ATUAÇÃO EM TODO O BRASIL &rarr;</span>
+        <span class="mx-8">QUASE 20 ANOS DE EXPERIÊNCIA &rarr;</span>
+        <span class="mx-8">MATRIZ EM BH · FILIAL EM BARBACENA &rarr;</span>
+      </div>
+    </div>
+
+    <!-- Counters -->
+    <div class="w-full bg-bg border-t border-gold/20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 divide-x divide-gold/10 py-6 text-center">
+        <div class="flex flex-col">
+          <span class="text-3xl font-playfair font-bold text-white"><span class="counter" data-target="19">0</span></span>
+          <span class="text-xs text-muted uppercase tracking-widest mt-1">Anos de experiência</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-3xl font-playfair font-bold text-white">+<span class="counter" data-target="1700">0</span></span>
+          <span class="text-xs text-muted uppercase tracking-widest mt-1">Processos atuados</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-3xl font-playfair font-bold text-white">+<span class="counter" data-target="2500">0</span></span>
+          <span class="text-xs text-muted uppercase tracking-widest mt-1">Clientes atendidos</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-3xl font-playfair font-bold text-white"><span class="counter" data-target="27">0</span></span>
+          <span class="text-xs text-muted uppercase tracking-widest mt-1">Estados atendidos</span>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // CountUp animation
+  const counters = document.querySelectorAll('.counter');
+  
+  const countUpObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const counter = entry.target as HTMLElement;
+        const target = parseInt(counter.getAttribute('data-target') || '0', 10);
+        const duration = 2000; // ms
+        const start = performance.now();
+        
+        const updateCounter = (currentTime: number) => {
+          const elapsedTime = currentTime - start;
+          const progress = Math.min(elapsedTime / duration, 1);
+          // Ease out quad
+          const easeProgress = progress * (2 - progress);
+          
+          counter.innerText = Math.floor(easeProgress * target).toString();
+          
+          if (progress < 1) {
+            requestAnimationFrame(updateCounter);
+          } else {
+            counter.innerText = target.toString();
+          }
+        };
+        
+        requestAnimationFrame(updateCounter);
+        countUpObserver.unobserve(counter);
+      }
+    });
+  }, { threshold: 0.5 });
+  
+  counters.forEach(c => countUpObserver.observe(c));
+</script>

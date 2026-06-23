@@ -1,0 +1,56 @@
+---
+const whatsappLink = "https://wa.me/5531997468554?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20falar%20com%20o%20Dr.%20Carlos%20Galvão.";
+---
+
+<section id="sobre" class="py-24 bg-bg relative">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      
+      <!-- Photo Column -->
+      <div class="fade-up order-2 md:order-1">
+        <div class="relative w-full max-w-md mx-auto">
+          <!-- Background accent -->
+          <div class="absolute -inset-4 border border-gold/30 rounded-lg translate-x-4 translate-y-4 -z-10"></div>
+          
+          <!-- Image -->
+          <div class="aspect-[3/4] bg-bg-card rounded-lg overflow-hidden relative group">
+            <!-- Subtle gradient overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-transparent opacity-60 z-10"></div>
+            
+            <img src="/foto.jpeg" alt="Dr. Carlos Galvão Neto" class="w-full h-full object-cover relative z-0 transition-transform duration-700 group-hover:scale-105" />
+          </div>
+        </div>
+      </div>
+      
+      <!-- Text Column -->
+      <div class="fade-up delay-2 order-1 md:order-2">
+        <h2 class="font-playfair text-4xl sm:text-5xl font-bold text-white mb-8">
+          Quem vai <span class="text-gold italic">defender</span> você
+        </h2>
+        
+        <div class="relative pl-6 sm:pl-8 border-l-2 border-gold">
+          <p class="text-gray-300 text-lg leading-relaxed mb-4">
+            Dr. Carlos Galvão Neto iniciou sua trajetória na advocacia em 2006 e, desde então, acumulou quase duas décadas de atuação em casos criminais complexos em Minas Gerais e em todo o país.
+          </p>
+          <p class="text-gray-300 text-lg leading-relaxed mb-4">
+            Com mais de 1.700 processos atuados e 2.500 clientes atendidos, o Dr. Carlos construiu sua reputação com base em estudo aprofundado, dedicação integral e empenho real em cada caso — independentemente da sua gravidade ou complexidade.
+          </p>
+          <p class="text-gray-300 text-lg leading-relaxed mb-4">
+            Seu escritório conta com sede em Belo Horizonte e filial em Barbacena, atendendo presencialmente na região e remotamente em qualquer estado do Brasil.
+          </p>
+          <p class="text-gray-300 text-lg leading-relaxed mb-8">
+            Não fazemos promessas vazias. Fazemos advocacia séria, com experiência de quem já esteve em todas as fases do processo penal e sabe exatamente o que fazer em cada uma delas.
+          </p>
+          
+          <a href={whatsappLink} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-gold hover:text-gold-light font-bold text-lg transition-colors group">
+            Falar com o Dr. Carlos
+            <svg class="w-5 h-5 transform transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>

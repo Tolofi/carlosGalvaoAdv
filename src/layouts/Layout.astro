@@ -1,0 +1,80 @@
+---
+import '../styles/global.css';
+
+const title = "Carlos Galvão | Advogado Criminalista em BH e Barbacena/MG";
+const description = "Dr. Carlos Galvão Neto — quase 20 anos de advocacia criminal em Belo Horizonte e Barbacena/MG. Tráfico, júri, habeas corpus, execução penal. Plantão 24h.";
+const canonical = "https://carlosgalvaoadv.com.br";
+---
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <!-- Favicon placeholder -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Carlos Galvão | Advogado Criminalista em BH e Barbacena/MG" />
+    <meta property="og:description" content="Defesa criminal com experiência real. +1.700 processos. Atendimento 24h. Atuação em todo o Brasil." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Carlos Galvão, Advogado Criminalista",
+      "description": "Advocacia criminal em Belo Horizonte e Barbacena/MG com quase 20 anos de experiência. Tráfico, júri, habeas corpus, crimes econômicos, Direito Penal Militar e todas as áreas do Direito Penal.",
+      "url": "https://carlosgalvaoadv.com.br",
+      "telephone": "+55-31-99746-8554",
+      "email": "contato@carlosgalvaoadv.com.br",
+      "foundingDate": "2006",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua dos Otoni, 742, sala 605",
+          "addressLocality": "Belo Horizonte",
+          "addressRegion": "MG",
+          "postalCode": "30150-270",
+          "addressCountry": "BR"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua Presidente Kenedy, 710, Centro",
+          "addressLocality": "Barbacena",
+          "addressRegion": "MG",
+          "postalCode": "36200-042",
+          "addressCountry": "BR"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/carlosgalvao.adv"
+      ],
+      "openingHours": "Mo-Fr 09:00-18:00",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "description": "Plantão 24h para urgências criminais"
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-bg text-text selection:bg-gold selection:text-bg">
+    <slot />
+  </body>
+</html>
